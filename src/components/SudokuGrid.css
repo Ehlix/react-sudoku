@@ -1,0 +1,43 @@
+table {
+    overflow: hidden;
+    border-radius: 12px;
+    border: 10px solid #2d3454;
+    border-collapse: collapse;
+}
+
+td, tr {
+    height: 40px;
+    width: 40px;
+    border: 2px solid #2d3454;
+
+}
+
+tr {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    background: #ffffff;
+    color: #111;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+td:nth-child(3n) {
+    border-right: 5px solid #2d3454;
+}
+
+tr:nth-child(3n) {
+    border-bottom: 5px solid #2d3454;
+}
+
+input {
+    text-align: center;
+    overflow: hidden;
+    border-radius: 999999px;
+    color: #111;
+    font-weight: 700;
+    border: none;
+    background: rgba(33, 39, 61, 0.24);
+    width: 30px;
+    height: 30px;
+}
