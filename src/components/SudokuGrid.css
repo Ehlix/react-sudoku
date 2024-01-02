@@ -1,20 +1,20 @@
 table {
     overflow: hidden;
     border-radius: 12px;
-    border: 10px solid #2d3454;
+    border: 10px solid #0a141a;
     border-collapse: collapse;
+    margin-bottom: -10px;
 }
 
 td, tr {
-    height: 40px;
-    width: 40px;
-    border: 2px solid #2d3454;
-
+    max-height: 50px;
+    max-width: 50px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #0a141a;
 }
 
 tr {
-    width: 24px;
-    height: 24px;
     text-align: center;
     background: #ffffff;
     color: #111;
@@ -22,12 +22,12 @@ tr {
     font-size: 18px;
 }
 
-td:nth-child(3n) {
-    border-right: 5px solid #2d3454;
+.rowBorderTd {
+    border-top: 5px solid #0a141a;
 }
 
-tr:nth-child(3n) {
-    border-bottom: 5px solid #2d3454;
+.colBorderTd {
+    border-left: 5px solid #0a141a;
 }
 
 input {
@@ -37,7 +37,97 @@ input {
     color: #111;
     font-weight: 700;
     border: none;
-    background: rgba(33, 39, 61, 0.24);
+    background: #cbcbcb;
     width: 30px;
+    height: 30px;
+}
+
+.buttonsSetCol-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.buttonsValidate-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.countInput-block {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #ffffff;;
+}
+
+.countInput {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1.1em;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: auto;
+    border-radius: 23px;
+    color: #0a141a;
+    background: #efefef;
+    transition: border-color 0.25s;
+}
+
+.countInput::placeholder {
+    font-weight: bold;
+    color: #e38b7e;
+}
+
+.cellButton {
+    display: block;
+    text-align: center;
+    background: #efefef;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+}
+
+.cellButton:hover {
+    background: #cfd6e5;
+    border-radius: 0;
+    border: none;
+}
+
+.currentCell {
+    background: #8da4bb;
+}
+
+.inputNumbers-block {
+    border: 2px solid #cfd6e5;
+    border-radius: 10px;
+    padding: 2px;
+    display: flex;
+    gap: 5px;
+}
+
+.inputNumbers-block > button {
+    background: #efefef;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    max-height: 50px;
+    max-width: 50px;
+    height: 50px;
+    width: 50px;
+}
+
+.cover {
     height: 30px;
 }

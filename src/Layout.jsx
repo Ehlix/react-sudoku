@@ -1,12 +1,12 @@
 import MainPage from "./components/MainPage.jsx";
-import React from "react";
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import {StrictMode} from "react";
 
-const Layout = () => (
+export const Layout = () => (
   <MainPage/>
 );
 
-ReactDOM.createRoot(document.getElementById('root')).render(<React.StrictMode>
+ReactDOM.createRoot(document.getElementById('root')).render(<StrictMode>
   <Layout/>
-</React.StrictMode>,);
+</StrictMode>,);
